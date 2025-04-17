@@ -105,3 +105,4 @@ console.log("before : " + JSON.stringify(allclothes));  //output = remains uncha
 console.log(myWears(allclothes, 5));//notice skirt becomes reference to allclothes
 console.log("after :" + JSON.stringify(allclothes)); //all changes take place here.5 is pushed and one removed;skirt.push,skirt.shift ; [2,3,4,5]
 
+//
