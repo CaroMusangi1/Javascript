@@ -229,3 +229,4 @@ function cases(val){
         return answer;
 }
         console.log(cases(7)); //output mid
+
