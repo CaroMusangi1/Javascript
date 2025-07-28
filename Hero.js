@@ -230,3 +230,59 @@ function cases(val){
 }
         console.log(cases(7)); //output mid
 
+        //1;37 multiple switch statements-
+
+//Returning boolen values from funtions
+//Cancellng if else logic
+function isLess (a, b) {
+  return a < b;
+}
+console.log(isLess(10,15));
+
+//Returning Early Pattern from Funtions
+function cdTest(c , d){
+  if (c < 0 || d < 0) {} {
+    return undefined;
+}
+return Math.round(Math.pow(Math.sqrt(c) + Math.sqrt(d), 2));
+}
+console.log(cdTest(-2,2));
+//Out put ,undefined 
+ 
+//Accesing object Properties with Dot Nototaion and Bracket.
+var testObj = {
+  "hat": "ballcap",
+  "my shirt": "jersey",
+  "shoes": "cleats",
+  };
+  testObj.hat = "cap"; //update object properties
+  testObj["skirt"] = "flare" //adding properties
+  delete testObj.shoes;
+var hatValue = testObj.hat;
+var shirtValue = testObj["my shirt"];
+console.log(hatValue);
+console.log(shirtValue);
+console.log(testObj["shoes"]); //output ,undefined
+console.log(testObj["skirt"]); //output , flare
+
+//We can use objects to replace switch statements
+
+//Accessing object properties in nested array
+var myPlants = [
+  {
+    type: "flowers",
+    list: ["rose", "tulip", "dandelion"]
+      },
+      {
+        type:"trees",
+        list:[
+          "fir",
+          "pine",
+          "birch"
+        ]
+      }
+          ];
+          
+          var secondTree = myPlants[1].list[1]; //second tree is the second element in the array,pine is the second element in list array
+          console.log(secondTree); //hence output "pine"
+
